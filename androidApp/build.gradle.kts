@@ -11,9 +11,10 @@ repositories {
     google()
     jcenter()
     mavenCentral()
+    mavenLocal()
 }
 dependencies {
-    implementation(project(":shared"))
+    implementation("com.jetbrains:KmmSample:1.0")
     implementation("com.google.android.material:material:1.2.0")
     implementation("androidx.appcompat:appcompat:1.2.0")
     implementation("androidx.constraintlayout:constraintlayout:1.1.3")

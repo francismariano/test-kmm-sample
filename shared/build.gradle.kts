@@ -13,6 +13,7 @@ repositories {
     google()
     jcenter()
     mavenCentral()
+    mavenLocal()
 }
 kotlin {
     android()
@@ -24,7 +25,11 @@ kotlin {
         }
     }
     sourceSets {
-        val commonMain by getting
+        val commonMain by getting {
+            dependencies {
+                implementation("com.jetbrains:KmmSample:1.0")
+            }
+        }
         val commonTest by getting {
             dependencies {
                 implementation(kotlin("test-common"))

@@ -2,8 +2,8 @@ package com.github.francismariano.testkmmsample.androidApp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.github.francismariano.testkmmsample.shared.Greeting
 import android.widget.TextView
+import com.jetbrains.kmm.shared.Greeting
 
 fun greet(): String {
     return Greeting().greeting()
